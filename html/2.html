@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page2</title>
+    <style>
+        .content{
+            min-width: 450px;
+        }
+        .content::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .bar{
+            float: right;
+            background-color: blue;
+            width: 200px;
+            height: 400px;
+        }
+        .aside{
+            float: left;
+            background-color: red;
+            width: 200px;
+            height: 400px;
+        }
+        .main{
+            margin-left: 210px;
+            margin-right: 210px;
+            background-color: pink;
+            height: 500px;
+            min-width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="bar"></div>
+        <div class="aside"></div>
+        <div class="main"></div>
+    </div>
+</body>
+</html>
